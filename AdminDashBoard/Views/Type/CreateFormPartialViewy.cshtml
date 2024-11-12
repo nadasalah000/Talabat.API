@@ -1,0 +1,16 @@
+﻿@using Talabat.Core.Entites
+@model ProductType
+
+<form method="post" asp-action="Create">
+	<div class="input-group mt-3">
+		<input asp-for="Name" class="form-control" />
+		<div class="input-group-append">
+			<button type="submit" class="btn btn-success">Add New Type</button>
+
+		</div>
+
+	</div>
+
+	<span asp-validation-for="Name"></span>
+
+</form>
